@@ -1,6 +1,5 @@
-<context-menu></context-menu>
 <ion-content>
-    <ion-list class="ativa-reveal">
+    <ion-list>
     
             <ion-item data-input="username">
                 <ion-label floating>Usuário</ion-label>
@@ -17,7 +16,7 @@
             </ion-item>
     
     </ion-list>
-    <button ion-button outline full (click)="login()">
+    <button ion-button  full (click)="login()">
         <img src="assets/images/svg-loaders/oval.svg" *ngIf="isLoading" />
         <span *ngIf="!isLoading">ENTRAR</span>
     </button>

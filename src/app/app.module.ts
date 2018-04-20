@@ -1,3 +1,4 @@
+import { TabsPage } from './../pages/tabs/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -14,6 +15,7 @@ import { androidConfig } from './../config/android.config';
 import { iosConfig } from './../config/ios.config';
 import { PaisesProvider } from './../providers/providers';
 import { HttpModule } from '@angular/http';
+
 //import { Geolocation } from '@ionic-native/geolocation';
 
 
@@ -23,7 +25,8 @@ import { HttpModule } from '@angular/http';
     HomePage,
     LoginPage,
     ContextMenu,
-    EmpresaPage
+    EmpresaPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { HttpModule } from '@angular/http';
     HomePage,
     LoginPage,
     ContextMenu,
-    EmpresaPage
+    EmpresaPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
