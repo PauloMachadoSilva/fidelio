@@ -1,7 +1,10 @@
 page-home {
-    ion-content{
+    ion-content{ 
         width: 80%;
-        margin:0 auto;
+        margin:50px auto;
         position: relative;
+        .item-inner {
+            border: none !important;
+        }
     }
 }

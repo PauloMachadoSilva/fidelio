@@ -1,3 +1,6 @@
+import { HomePage } from './../home/home';
+import { TabsPage } from './../tabs/tabs';
+import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,13 +10,13 @@ import { Component } from '@angular/core';
 export class LoginPage{
 
     constructor(
-
+        public navCtrl: NavController,
     )
     {
 
     }
 
     login ():void{
-        alert('logado');
+        this.navCtrl.setRoot(HomePage);
     }
 }
