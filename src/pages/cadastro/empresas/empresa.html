@@ -1,8 +1,50 @@
 <context-menu></context-menu>
-<ion-content padding>
-  <ion-item>
-    <ion-label color="primary">Cadastro de Empresas</ion-label>
-   
-  </ion-item>
+  <ion-content padding>
+    <ion-list>   
+        <ion-label class="title" color="primary">Cadastro de Empresas</ion-label>
+      <ion-item data-input="nome">
+        <ion-label floating>Nome da Empresa</ion-label>
+        <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+    <ion-item data-input="telefone">
+      <ion-label floating>Telefone</ion-label>
+      <ion-input type="tel" [(ngModel)]="tel"></ion-input>
+    </ion-item>
+    <ion-item data-input="cnpj">
+      <ion-label floating>CNPJ</ion-label>
+      <ion-input type="text" [(ngModel)]="cnpj"></ion-input>
+    </ion-item>
+    <ion-list>
+            <ion-item>
+              <ion-label>Atividade</ion-label>
+              <ion-select [(ngModel)]="atividade">
+                <ion-option value="restaurante">Restaurante</ion-option>
+                <ion-option value="pizaria">Pizzaria</ion-option>
+                <ion-option value="agenciaauto">Agência de Automóveis</ion-option>
+                <ion-option value="imobiliaria">Imobiliária</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+    <ion-item data-input="cep">
+      <ion-label floating>CEP</ion-label>
+      <ion-input type="text" [(ngModel)]="cep"></ion-input>
+    </ion-item>
+    <ion-item data-input="estado">
+      <ion-label floating>Estado</ion-label>
+      <ion-input type="text" [(ngModel)]="estado"></ion-input>
+    </ion-item>
+    <ion-item data-input="cidade">
+      <ion-label floating>Cidade</ion-label>
+      <ion-input type="text" [(ngModel)]="cidade"></ion-input>
+    </ion-item>
+    <ion-item data-input="bairro">
+      <ion-label floating>Bairro</ion-label>
+      <ion-input type="text" [(ngModel)]="bairro"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button  full (click)="salvar()">
+    <img src="assets/images/svg-loaders/oval.svg" *ngIf="isLoading" />
+    <span *ngIf="!isLoading">ENTRAR</span>
+  </button>
 
 </ion-content>
