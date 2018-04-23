@@ -1,4 +1,13 @@
 page-empresa {
+    ion-header {
+        button {
+            float: right;
+        }
+        
+    }
+    .header-md {
+        background-image:none !important;
+    }
     ion-content{ 
         width: 80%;
         margin:50px auto;

@@ -1,5 +1,5 @@
 <ion-content>
-        <ion-img width=260 height=80 src="assets/imgs/logo-fideliu.svg"></ion-img>
+        <ion-img width=200 height=80 src="assets/imgs/logo-fideliu.svg"></ion-img>
     <ion-list>
     
             <ion-item data-input="username">
@@ -21,5 +21,8 @@
         <img src="assets/images/svg-loaders/oval.svg" *ngIf="isLoading" />
         <span *ngIf="!isLoading">ENTRAR</span>
     </button>
-    <a href="#" target="_blank" (click)="registerNewInvestor($event)">Quero me tornar um cliente</a>
+    <div class="">
+        <a href="#" target="_blank">Ainda não sou cliente.</a>
+        <a href="#" target="_blank">Esqueci login/senha</a>
+    </div>
 </ion-content>

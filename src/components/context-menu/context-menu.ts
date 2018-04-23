@@ -22,7 +22,9 @@ export class ContextMenu{
     this.pages = [
        
        { title: 'Cadastrar Empresa',component: EmpresaPage}, 
-       { title: 'Cadastrar Usuarios',component: UsuarioPage},       
+       { title: 'Cadastrar Usuarios',component: UsuarioPage},
+       { title: 'Sair da sua conta',component: LoginPage},       
+       
        
     ];
     

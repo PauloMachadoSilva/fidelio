@@ -1,16 +1,23 @@
 page-login {
     ion-content{
         width: 80%;
-        margin:100px auto;
+        margin:120px auto;
         position: relative !important;
         a{
             margin: 0 auto;
-            position: absolute;
-            width: 100%;
+            display: inline-block;
+            position: relative;
+            width:48.5%;
             text-align: center;
+            color:#ccc;
+            font-size: 11px;
+            &:hover{
+                color: rgb(185, 0, 0);
+            }
         }
+        
     }
-    ion-header{
+    ion-header {
         position: relative !important
     }
     ion-img {
@@ -22,4 +29,5 @@ page-login {
        
 
     }
+    
 }
