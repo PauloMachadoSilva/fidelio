@@ -1,4 +1,3 @@
-import { PaisesProvider } from './../../../providers/providers';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -16,7 +15,9 @@ export class EmpresaPage {
   }
  
   salvar ():void{
-    alert('Salvo com sucesso!');
-}
- 
+      alert('Salvo com sucesso!');
+  }
+  closeMe (): void {
+    this.navCtrl.pop();
+  }
 }

@@ -1,10 +1,25 @@
 page-login {
     ion-content{
         width: 80%;
-        margin:20px auto;
+        margin:100px auto;
         position: relative !important;
+        a{
+            margin: 0 auto;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
     }
     ion-header{
         position: relative !important
+    }
+    ion-img {
+        background: transparent;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    
+       
+
     }
 }

@@ -1,3 +1,4 @@
+import { UsuarioPage } from './../../pages/cadastro/usuarios/usuario';
 import { EmpresaPage } from './../../pages/cadastro/empresas/empresa';
 import { LoginPage } from './../../pages/login/login';
 import { Component,ViewChild } from '@angular/core';
@@ -20,9 +21,9 @@ export class ContextMenu{
    //Array de páginas
     this.pages = [
        
-       { title: 'Cadastrar Empresa',component: EmpresaPage},       
+       { title: 'Cadastrar Empresa',component: EmpresaPage}, 
+       { title: 'Cadastrar Usuarios',component: UsuarioPage},       
        
-       { title: 'Sair',component: LoginPage},
     ];
     
 
@@ -31,7 +32,7 @@ export class ContextMenu{
     //Empilhar views
     //this.navCtrl.push(page.component);
     //Emviar para uma nova página
-    this.navCtrl.setRoot(page.component);
+    this.navCtrl.push(page.component);
     
  }
  adicionaMarcador(){

@@ -9,12 +9,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { EmpresaPage } from './../pages/cadastro/empresas/empresa';
+import { UsuarioPage } from '../pages/cadastro/usuarios/usuario';
 import { ContextMenu } from '../components/context-menu/context-menu';
 
 import { androidConfig } from './../config/android.config';
 import { iosConfig } from './../config/ios.config';
 import { PaisesProvider } from './../providers/providers';
 import { HttpModule } from '@angular/http';
+
 
 //import { Geolocation } from '@ionic-native/geolocation';
 
@@ -26,6 +28,7 @@ import { HttpModule } from '@angular/http';
     LoginPage,
     ContextMenu,
     EmpresaPage,
+    UsuarioPage,
     TabsPage
   ],
   imports: [
@@ -46,6 +49,7 @@ import { HttpModule } from '@angular/http';
     LoginPage,
     ContextMenu,
     EmpresaPage,
+    UsuarioPage,    
     TabsPage
   ],
   providers: [

@@ -1,4 +1,5 @@
 <ion-content>
+        <ion-img width=260 height=80 src="assets/imgs/logo-fideliu.svg"></ion-img>
     <ion-list>
     
             <ion-item data-input="username">
@@ -16,8 +17,9 @@
             </ion-item>
     
     </ion-list>
-    <button ion-button  full (click)="login()">
+    <button ion-button  full (click)="login()" color="danger">
         <img src="assets/images/svg-loaders/oval.svg" *ngIf="isLoading" />
         <span *ngIf="!isLoading">ENTRAR</span>
     </button>
+    <a href="#" target="_blank" (click)="registerNewInvestor($event)">Quero me tornar um cliente</a>
 </ion-content>
